@@ -23,7 +23,7 @@ export default function DrugScanner({ navigation }) {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-    alert("The barcode has been scanned");
+    //alert("The barcode has been scanned");
     navigation.navigate("DrugInfo", { data });
   };
 
