@@ -14,7 +14,7 @@ const mockData = {
   },
 };
 
-export default function DrugOptions({ navigation, route }) {
+export default function DrugAllergies({ navigation, route }) {
   //const { data } = route.params;
   const [drugsList, setDrugsList] = useState(mockData);
 

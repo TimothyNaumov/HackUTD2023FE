@@ -7,6 +7,8 @@ import { PaperProvider } from "react-native-paper";
 import MainApp from "./views/MainApp";
 import DrugScanner from "./views/DrugScanner";
 import DrugInfo from "./views/DrugInfo";
+import DrugOptions from "./views/DrugOptions";
+import DrugAllergies from "./views/DrugAllergies";
 
 const Stack = createStackNavigator();
 
@@ -18,7 +20,7 @@ function App() {
           <Stack.Screen
             name="MainApp"
             component={MainApp}
-            options={{ title: "" }}
+            options={{ title: "Patient Protect" }}
           />
           <Stack.Screen
             name="DrugScanner"
@@ -29,6 +31,16 @@ function App() {
             name="DrugInfo"
             component={DrugInfo}
             options={{ title: "Drug Info" }}
+          />
+          <Stack.Screen
+            name="DrugOptions"
+            component={DrugOptions}
+            options={{ title: "My Medicine" }}
+          />
+          <Stack.Screen
+            name="DrugAllergies"
+            component={DrugAllergies}
+            options={{ title: "My Drug Allergies" }}
           />
         </Stack.Navigator>
       </NavigationContainer>

@@ -15,11 +15,11 @@ const MainApp = () => {
       icon: "check-circle-outline",
       navigateTo: "DrugScanner",
     },
-    { title: "Take Medication", icon: "pill", navigateTo: "TakeMedication" },
+    { title: "Take Medication", icon: "pill", navigateTo: "DrugOptions" },
     {
       title: "Medication History",
       icon: "history",
-      navigateTo: "MedicationHistory",
+      navigateTo: "DrugOptions",
     },
     {
       title: "Drug Allergies",
